@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Výpočet kvadratické rovnice</title>
+    <style>
+        body {
+            background-color: black;
+            color: red;
+            text-align: center;
+        }
+        form {
+            margin: auto;
+            width: 50%;
+            padding: 20px;
+        }
+        input[type="text"], input[type="submit"] {
+            margin: 5px;
+            padding: 5px;
+        }
+        #error {
+            color: white;
+        }
+        #roots {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Výpočet kvadratické rovnice</h1>
+    <form action="/" method="post">
+        <label for="a">Koeficient a:</label>
+        <input type="text" name="a" id="a"><br>
+        <label for="b">Koeficient b:</label>
+        <input type="text" name="b" id="b"><br>
+        <label for="c">Koeficient c:</label>
+        <input type="text" name="c" id="c"><br>
+        <input type="submit" value="Solve">
+    </form>
+    {% if error %}
+        <p id="error">{{ error }}</p>
+    {% endif %}
+    {% if roots %}
+        <h2 id="roots">Kořeny jsou:</h2>
+        <p id="roots">Kořen 1: {{ roots[0] }}</p>
+        <p id="roots">Kořen 2: {{ roots[1] }}</p>
+    {% endif %}
+</body>
+</html>
+
+

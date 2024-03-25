@@ -1,0 +1,4 @@
+OS: Linux-5.15.0-72-generic-x86_64-with-glibc2.29
+Verze OS: #79~20.04.1-Ubuntu SMP Thu Apr 20 22:12:07 UTC 2023
+Verze Pythonu: 3.8.10 (default, Mar 13 2023, 10:26:41) 
+[GCC 9.4.0]
